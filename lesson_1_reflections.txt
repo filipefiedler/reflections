@@ -1,0 +1,64 @@
+Commands
+	git clone
+	git diff
+	git checkout
+	git log
+	git status
+	git init
+	git add
+	git diff --stage
+	git reset --hard
+	git branches
+	git show
+	git merge
+
+How did viewing a diff between two versions of a file help you see the bug that was introduced?
+
+Viewing a diff between the two versions of the file makes easy to compare how we changed our file through the time, making possible to see easily typo mistakes or variables changes.
+In huge files, with thousand of lines, this is tool is very useful, because explicit tells you which line changed, how it was before the change and how it is now.
+
+How could having easy access to the entire history of a file make you a more efficient programmer in the long term?
+	You can use the file history to see how your skills developed through time.
+	You do not waste time if you lose one of your files
+	You do not waste time trying to remember when you changed the fucking name of that variable that is not working anymore
+	All that you have produced was not thrown away. It exists and you can access
+
+What do you think are the pros and cons of manually choosing when to create a commit, like you do in Git, vs having versions automatically saved, like Google Docs does?
+	The cons: you have to remember to create a commit and get the habit to do right commits
+	The pros: it is very difficult to a computer know when a important change was done in the code in order to create a new commit
+
+Why do you think some version control systems, like Git, allow saving multiple files in one commit, while others, like Google Docs, treat each file separately?
+	Git is a version control system created with coding in mind and in a lot of projects there is a bunch of files related with each other, so, in order to make the versions of the program easy to get, it is better to safe the entire version of the program in the history, not just a file.
+	Google Docs, in the other hand, does not deal with related files often. The common is do a entire work in just one Google Docs file, so it is not necessary to do a commit of the entire project.
+
+How can you use the commands git log and git diff to view the history of files?
+	You use git log to see all the commitments of the file and you use git diff to see what changed from a file to another.
+
+How might using version control make you more confident to make changes that could break something?
+	Using version control is a safe way to restore files, so you are more confident because you have sure that if shit happens you have a previous file that worked well. You are more confident to change entire parts of the code as well.
+
+Now that you have your workspace set up, what do you want to try using Git for?
+	I want to try using Git for develop my projects in a good way.
+
+What happens when you initialize a repository? Why do you need to do it?
+	The folder become a new repository. You have to add the files and make a commit
+
+How is the staging area different from the working directory and the repository? What value do you think it offers?
+
+How can you use the staging area to make sure you have one commit per logical change?
+
+What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+	Branches are helpful when you want to develop a extra feature to your project without fear that the project as a whole will be affected. You can still show the project to a person while your extra feature is being developed. The master branch always work, without bugs and the branches is still being developed and might have bugs. It helps a lot in colaboration.
+
+How do the diagrams help you visualize the branch structure?
+	The diagrams shows the history of file with the parents of each commit.
+
+What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+	The result is a new commit with the changes introduced in both branches. If the feature was in the first mutual parent commit of the two branches and one of the branches deleted it, the feature will not appear in the merged version.
+
+What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+	When there is a conflict between two parts of the code, Git can not know whether to maintain one part or another, so it is important to say to the user and the user can decide it. Thus, it is a cons of Git's automatic merging being so automatic. Thinking in this situation, Linus made the Git system just auto merge what it is different. Git auto check whether one part of the code was new or not and whether it is a conflict or not, leaving manually the merging of the parts that there is a difference.
+
+
+	
+
